@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.weather{
+    width: 400px;
+    margin: 0 auto;
+}
+.form input{
+    width: 80%;
+    padding: 10px;
+}
+.form button{
+    width: 20%;
+    padding: 10px;
+    background-color: greenyellow;
+    
+}
+.form button:hover{
+    background-color: brown;
+    transition: 0.3s;
+    border-radius: 16px;
+}
+table{
+    width: 100%;
+    border-collapse:collapse ;
+    margin-top: 10px;
+    background-color: rgb(143, 198, 230);
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+body{
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url('./img/cloud.jpg');
+    background-size: cover;
+    animation-name: bg ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+@keyframes bg {
+    0% {
+        background-position: 10% 0%; /* Начальная позиция фона */
+    }
+    100% {
+        background-position: 50% 80%; /* Конечная позиция фона (можете настроить по вашему желанию) */
+    }}
